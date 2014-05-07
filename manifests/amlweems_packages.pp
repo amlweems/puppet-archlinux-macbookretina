@@ -21,10 +21,6 @@ class puppet-archlinux-macbookretina::amlweems_packages {
   package {'vim': ensure => present, }
   package {'wipe': ensure => present, }
 
-  # graphical environment misc
-  package {'kdegraphics-okular': ensure => present, }
-  package {'dia': ensure => present, }
-
   # browser
   package {'firefox': ensure => present, }
 
@@ -38,6 +34,13 @@ class puppet-archlinux-macbookretina::amlweems_packages {
   # java
   package {'jre7-openjdk': ensure => present, }
   package {'jdk7-openjdk': ensure => present, }
+
+  # desktop
+  package {'slim': ensure => present, }
+  package {'awesome': ensure => present, }
+
+  # terminal
+  package {'gnome-terminal': ensure => present, }
 
   # misc
   package {'gnu-netcat': ensure => present, }

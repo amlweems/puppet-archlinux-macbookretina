@@ -19,7 +19,7 @@
 #
 class puppet-archlinux-macbookretina::arch_base {
   package {'links': ensure => present, }
-  package {'lynx': ensure => absent, }
+  package {'lynx': ensure => present, }
   package {'lsb-release': ensure => present, }
   package {'dmidecode': ensure => present, }
   package {'macfanctld-git': ensure => present, }
@@ -27,7 +27,6 @@ class puppet-archlinux-macbookretina::arch_base {
   package {'ttf-dejavu': ensure => present, }
   package {'screen': ensure => present, }
   package {'tmux': ensure => present, }
-  package {'hdparm': ensure => present, }
   package {'wget': ensure => present, }
   package {'dnsutils': ensure => present, }
   package {'net-tools': ensure => present, }
