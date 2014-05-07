@@ -1,25 +1,21 @@
 # Class: puppet-archlinux-macbookretina::wireless
 #
-# Install driver for Broadcom BCM4331 wireless, iw and wpa_supplicant
-#
-# Note that we're using the bcm43142 package from AUR, but that appears to have
-# the 6.20.x driver which supports BCM4331.
+# Install driver for Broadcom BCM4360 wireless, iw and wpa_supplicant
 #
 # Parameters:
 #
 # Actions:
-#   - Install wireless-broadcom-bcm43142
+#   - Install broadcom-wl-dkms
 #   - Install iw and wpa_supplicant
 #
 # Requires:
-#   - requires the dkms class for wireless-bcm43142-dkms
+#   - requires the dkms class for broadcom-wl-dkms
 #
 # Sample Usage:
 #
 class puppet-archlinux-macbookretina::wireless {
 
-  # @TODO: look for a specific bcm4331 package, or wait for this to get renamed more generically
-  package {'wireless-bcm43142-dkms':
+  package {'broadcom-wl-dkms':
     ensure => present,
   }
 
