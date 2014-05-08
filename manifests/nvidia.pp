@@ -24,7 +24,6 @@ class puppet-archlinux-macbookretina::nvidia {
 
   package {$nvidia_packages:
     ensure  => present,
-    notify  => Exec['mkinitcpio'],
     require => Package[$nouveau_packages],
   }
 

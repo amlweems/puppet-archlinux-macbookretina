@@ -23,6 +23,7 @@ class puppet-archlinux-macbookretina::amlweems_packages {
 
   # browser
   package {'firefox': ensure => present, }
+  package {'chromium': ensure => present, }
 
   # keepass
   package {'keepassx': ensure => present, }
@@ -45,18 +46,14 @@ class puppet-archlinux-macbookretina::amlweems_packages {
   # misc
   package {'gnu-netcat': ensure => present, }
   package {'nmap': ensure => present, }
-  package {'pdftk': ensure => present, }
   package {'strace': ensure => present, }
   package {'tcpdump': ensure => present, }
   package {'traceroute': ensure => present, }
-  package {'vlc': ensure => present, }
   package {'wireshark-cli': ensure => present, }
   package {'wireshark-gtk': ensure => present, }
-  package {'xscreensaver': ensure => present, }
-  package {'syslinux': ensure => present, }
-  package { 'imagemagick': ensure => present, }
+  package {'imagemagick': ensure => present, }
   package {'tree': ensure => present, }
-  package{ 'gdb': ensure => present, }
+  package {'gdb': ensure => present, }
   package {'python': ensure => present, }
 
 }

@@ -13,7 +13,7 @@
 #
 class puppet-archlinux-macbookretina::xorg {
 
-  $xorg_packages = ['xorg-server', 'xorg-apps', 'xorg-server-utils', 'xorg-xinit', 'mesa']
+  $xorg_packages = ['xorg-server', 'xorg-apps', 'xorg-server-utils', 'xorg-xinit']
 
   package {$xorg_packages:
     ensure => present,

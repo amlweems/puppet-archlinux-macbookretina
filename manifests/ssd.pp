@@ -32,10 +32,10 @@ class puppet-archlinux-macbookretina::ssd {
   # sysctl values specific to laptops and SSDS
   #  see: https://www.kernel.org/doc/Documentation/sysctl/vm.txt
   #  and: https://www.kernel.org/doc/Documentation/laptops/laptop-mode.txt
-  sysctl::value {'vm.dirty_writeback_centisecs': value => '1500', }
-  sysctl::value {'vm.laptop_mode': value => '5', }
-  sysctl::value {'vm.swappiness': value => '1', }
-  sysctl::value {'vm.vfs_cache_pressure': value => '50', }
+  #sysctl::value {'vm.dirty_writeback_centisecs': value => '1500', }
+  #sysctl::value {'vm.laptop_mode': value => '5', }
+  #sysctl::value {'vm.swappiness': value => '1', }
+  #sysctl::value {'vm.vfs_cache_pressure': value => '50', }
 
 }
 

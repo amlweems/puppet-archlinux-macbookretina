@@ -19,12 +19,4 @@ class puppet-archlinux-macbookretina::wireless {
     ensure => present,
   }
 
-  package {'iw':
-    ensure => present,
-  }
-
-  package {'wpa_supplicant':
-    ensure => present,
-  }
-
 }
