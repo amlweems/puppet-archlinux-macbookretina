@@ -13,10 +13,6 @@
 #
 class puppet-archlinux-macbookretina::openvpn {
 
-  package {'networkmanager-openvpn':
-    ensure => present,
-  }
-
   package {'openvpn':
     ensure => present,
   }

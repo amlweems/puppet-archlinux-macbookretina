@@ -19,30 +19,18 @@ class puppet-archlinux-macbookretina {
   # Packages largely specific to amlweems's workstation setup
   include puppet-archlinux-macbookretina::amlweems_packages
 
-  # Install Android development tools
-  include puppet-archlinux-macbookretina::android
-
   # Install base packages we want on any (arch) system and setup makepkg.conf
   include puppet-archlinux-macbookretina::arch_base
 
-  # Install and configure chrony, a roaming/laptop friendly NTP client
-  include puppet-archlinux-macbookretina::chrony
-
-  # Install CUPS printing
-  include puppet-archlinux-macbookretina::cups
+  # Install awesome window management
+  include puppet-archlinux-macbookretina::awesome
 
   # Install, run and configure DKMS
   include puppet-archlinux-macbookretina::dkms
 
-  # Install proprietary google-chrome package and ttf-google-fonts-git from archlinuxfr repository.
-  include puppet-archlinux-macbookretina::googlechrome
-
   # BLACKLISTED in makeinitpp.sh: laptop_mode_tools
   #  # Install and configute laptop-mode-tools for power saving
   #  include puppet-archlinux-macbookretina::laptop_mode_tools
-
-  # Install LibreOffice suite
-  include puppet-archlinux-macbookretina::libreoffice
 
   # Install the mlocate package and run updatedb
   include puppet-archlinux-macbookretina::locate
@@ -50,11 +38,8 @@ class puppet-archlinux-macbookretina {
   # Sets up macbook-specific keyboard stuff
   include puppet-archlinux-macbookretina::mac_keyboard
 
-  # Setup KDM/KDE specific to the MacBook Pro Retina - setup kdmrc
-  include puppet-archlinux-macbookretina::mbp_retina_kde
-
-  # Install and setup networkmanager its KDE components, and ensure dhcpcd is stopped and nm is running
-  include puppet-archlinux-macbookretina::networkmanager
+  # Install mtrack for trackpad management
+  include puppet-archlinux-macbookretina::mtrack
 
   # BLACKLISTED in makeinitpp.sh: nouveau
   #  # Install nouveau driver for nvidia graphics and sample xorg.conf. Choose this class OR nvidia.

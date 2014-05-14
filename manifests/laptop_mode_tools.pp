@@ -15,6 +15,7 @@ class puppet-archlinux-macbookretina::laptop_mode_tools {
 
   package {'laptop-mode-tools':
     ensure => present,
+    require => Package['yaourt'],
   }
 
   file {'/etc/laptop-mode/laptop-mode.conf':
