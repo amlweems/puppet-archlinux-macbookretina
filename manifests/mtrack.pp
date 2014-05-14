@@ -1,18 +1,17 @@
 # Class: puppet-archlinux-macbookretina::mtrack
 #
-# Install xf86-input-mtrack-git for MBP Trackpad use
+# Install mtrack for trackpad management
 #
 # Parameters:
 #
 # Actions:
 #   - Install xf86-input-mtrack-git
-#   - Install /etc/X11/xorg.conf.d/10-mtrack.conf
 #
 # Requires:
 #
 # Sample Usage:
 #
-class puppet-archlinux-macbookretina::nvidia {
+class puppet-archlinux-macbookretina::mtrack {
 
   package {'xf86-input-mtrack-git':
     ensure  => present,

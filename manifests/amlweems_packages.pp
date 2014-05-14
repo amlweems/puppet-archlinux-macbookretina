@@ -33,7 +33,6 @@ class puppet-archlinux-macbookretina::amlweems_packages {
 
   # desktop
   package {'slim': ensure => present, }
-  package {'awesome': ensure => present, }
 
   # terminal
   package {'gnome-terminal': ensure => present, }

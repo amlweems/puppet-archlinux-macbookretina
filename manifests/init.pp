@@ -22,6 +22,9 @@ class puppet-archlinux-macbookretina {
   # Install base packages we want on any (arch) system and setup makepkg.conf
   include puppet-archlinux-macbookretina::arch_base
 
+  # Install awesome window management
+  include puppet-archlinux-macbookretina::awesome
+
   # Install, run and configure DKMS
   include puppet-archlinux-macbookretina::dkms
 
@@ -34,6 +37,9 @@ class puppet-archlinux-macbookretina {
 
   # Sets up macbook-specific keyboard stuff
   include puppet-archlinux-macbookretina::mac_keyboard
+
+  # Install mtrack for trackpad management
+  include puppet-archlinux-macbookretina::mtrack
 
   # BLACKLISTED in makeinitpp.sh: nouveau
   #  # Install nouveau driver for nvidia graphics and sample xorg.conf. Choose this class OR nvidia.
