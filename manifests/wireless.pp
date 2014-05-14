@@ -16,7 +16,8 @@
 class puppet-archlinux-macbookretina::wireless {
 
   package {'broadcom-wl-dkms':
-    ensure => present,
+    ensure  => present,
+    require => Package['yaourt']
   }
 
 }

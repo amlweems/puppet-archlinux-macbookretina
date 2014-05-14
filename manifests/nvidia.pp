@@ -19,7 +19,7 @@ class puppet-archlinux-macbookretina::nvidia {
 
   package {$nouveau_packages:
     uninstall_options => '-dds',
-    ensure          => absent,
+    ensure            => absent,
   }
 
   package {$nvidia_packages:

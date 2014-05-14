@@ -5,11 +5,8 @@
 # Parameters:
 #
 # Actions:
-#   - Install lsb-release, dmidecode
-#   - Install macfanctld-git
 #   - Install alsa-utils, ttf-dejavu
-#   - Install links, make sure lynx isnt on the system
-#   - Install screen
+#   - Install tmux
 #   - Setup /etc/makepkg.conf for system-optimized compiling and compiling in tmpfs
 #   - Setup systemd service to run script to create tmpfs compile dir on boot
 #
@@ -18,14 +15,8 @@
 # Sample Usage:
 #
 class puppet-archlinux-macbookretina::arch_base {
-  package {'links': ensure => present, }
-  package {'lynx': ensure => present, }
-  package {'lsb-release': ensure => present, }
-  package {'dmidecode': ensure => present, }
-  package {'macfanctld-git': ensure => present, }
   package {'alsa-utils': ensure => present, }
   package {'ttf-dejavu': ensure => present, }
-  package {'screen': ensure => present, }
   package {'tmux': ensure => present, }
   package {'wget': ensure => present, }
   package {'dnsutils': ensure => present, }

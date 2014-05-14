@@ -15,7 +15,8 @@
 class puppet-archlinux-macbookretina::nvidia {
 
   package {'xf86-input-mtrack-git':
-    ensure          => present,
+    ensure  => present,
+    require => Package['yaourt'],
   }
 
   file { '/etc/X11/xorg.conf.d/10-mtrack.conf':
